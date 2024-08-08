@@ -1,0 +1,4 @@
+Flask
+Flask-SocketIO
+google-cloud-speech
+python-dotenv

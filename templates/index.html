@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revinion</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .circle {
+            border-radius: 50%;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .mic-button {
+            background-color: #ff0000;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mic-icon {
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center">
+            <h1 class="text-xl font-bold">REVINION</h1>
+            <div class="w-24 h-24 rounded-full bg-black flex items-center justify-center text-white">
+                <span class="text-center">Logo entreprise</span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white">
+                    <span>Nom</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <div class="flex justify-center items-center space-x-4">
+                <input type="text" placeholder="Recherche réunion précédente" class="border p-2 w-2/3 rounded">
+                <button class="bg-gray-300 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 10-14 0 7 7 0 0014 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-between items-center">
+            <div class="w-24 h-24 bg-black rounded-full"></div>
+            <button class="mic-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mic-icon h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18c3.866 0 7-3.134 7-7V5a7 7 0 10-14 0v6c0 3.866 3.134 7 7 7z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11h8m-4 4v4m0-4a4 4 0 01-4-4" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-xl font-bold">Conversation de la réunion</h2>
+            <div class="border p-4 mt-2 h-64 overflow-y-scroll">
+                <!-- Conversation content will go here -->
+            </div>
+        </div>
+
+        <div class="mt-4 flex justify-between items-center">
+            <span>conversation plaine écran</span>
+            <div class="w-6 h-6 bg-black rounded-full"></div>
+        </div>
+    </div>
+
+</body>
+</html>
